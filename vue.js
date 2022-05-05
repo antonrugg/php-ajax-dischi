@@ -6,7 +6,7 @@ const app = new Vue({
         }
     },
     mounted() {
-        axios.get('http://localhost/php-ajax-dischi/data/data.php').then((response) => {
+        axios.get('http://localhost/php-ajax-dischi/data/apiDiscs.php').then((response) => {
             console.log(response);
             if (response.status === 200) {
                 this.discs = response.data;

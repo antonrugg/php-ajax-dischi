@@ -26,5 +26,29 @@
             
             </div>
     </header>
+    <main>
+            <div class="container mt-5">
+                <div class="row">
+                 <?php   
+                    include(__DIR__ . '/data/data.php');
+                    foreach ($discs as $disc) {
+                        echo "<div class='ar-card'>";
+                        echo "<div class='card'>";
+                        echo "</div>";
+                        echo "</div>";
+
+                    }
+                    
+                    //     <div class="card">
+                    //     <img :src="disc.poster" :alt="disc.title" />
+                    //     <h2> {{disc.title}} </h2>
+                    //     <div>{{disc.author}} </div>
+                    //     <div>{{disc.year}} </div>
+                    //     </div>
+                    // </div>
+                  ?>  
+                </div>
+            </div>        
+        </main>
 </body>
 </html>
