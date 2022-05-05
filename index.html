@@ -30,12 +30,14 @@
         <main>
             <div class="container mt-5">
                 <div class="row">
-                    <div class=ar-card>
+                    <div class=ar-card v-for="(disc, index) in discs" :key="index">
                         <div class="card">
-                            
+                        <img :src="disc.poster" :alt="disc.title" />
+                        <h2> {{disc.title}} </h2>
+                        <div>{{disc.author}} </div>
+                        <div>{{disc.year}} </div>
                         </div>
                     </div>
-
                 </div>
             </div>        
         </main>
@@ -47,7 +49,7 @@
 </body>
 </html>
 
-<!-- <img :src="record.poster" :alt="record.title" />
-<h2> {{record.title}} </h2>
-<div>{{record.author}} </div>
-<div>{{record.year}} </div> -->
+<!-- <img :src="disc.poster" :alt="disc.title" />
+<h2> {{disc.title}} </h2>
+<div>{{disc.author}} </div>
+<div>{{disc.year}} </div> -->

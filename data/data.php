@@ -1,5 +1,12 @@
 <?php
-    $discs = [   
+    $discs = [  
+    [
+        "author" => "Bon Jovi",
+        "genre" => "Rock",
+        "poster" => "https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg",
+        "title" => "New Jersey",
+        "year" => "1988",
+    ],
     [
         "author" => "Queen",
         "genre" => "Pop",
@@ -68,5 +75,8 @@
     header('Content-Type: application/json');
 
     echo json_encode($discs);
+
+    //http://localhost/php-ajax-dischi/data/data.php
+    //json raggiungibile qui^
 
 ?>
