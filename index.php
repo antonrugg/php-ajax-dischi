@@ -32,10 +32,14 @@
                  <?php   
                     include(__DIR__ . '/data/data.php');
                     foreach ($discs as $disc) {
-                        echo "<div class='ar-card'>";
-                        echo "<div class='card'>";
-                        echo "</div>";
-                        echo "</div>";
+                        echo"<div class='ar-card'>";
+                            echo"<div class='card'>";
+                                echo('<img src="'. $disc["poster"] .'" alt="'. $disc["title"] .'" />');
+                                echo('<h2>'. $disc["title"] .'</h2>');
+                                echo('<div>'. $disc["author"] .'</div>');
+                                echo('<div>'. $disc["year"] .'</div>'); 
+                            echo"</div>";
+                        echo"</div>";
 
                     }
                     
